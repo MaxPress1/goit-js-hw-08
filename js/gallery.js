@@ -98,23 +98,3 @@ function parentLisener(event) {
 
     instance.show();
 }
-
-
-
-boxesGallery.addEventListener("mouseenter", function (event) {
-    event.preventDefault();
-
-    if (event.target.tagName !== 'IMG') {
-        return;
-    }
-
-    
-})
-
-createBtn.addEventListener("mouseleave", function () {
-    createBtn.style.backgroundColor = "";
-})
-
-
-
-
