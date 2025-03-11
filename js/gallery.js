@@ -90,10 +90,8 @@ function parentLisener(event) {
         return;
     }
 
-    const imageUrl = event.target.dataset.source;
-
     const instance = basicLightbox.create(`
-        <img src="${imageUrl}" width="1112px" height="640px">
+        <img src="${event.target.dataset.source}" width="1112px" height="640px">
     `);
 
     instance.show();
