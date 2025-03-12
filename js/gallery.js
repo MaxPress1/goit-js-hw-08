@@ -69,7 +69,7 @@ const images = [
 const boxesGallery = document.querySelector(".gallery");
 
 const newImg = images.map(img => `<li class="gallery-item">
-            <a class="gallery-link" href="large-image.jpg">
+            <a class="gallery-link" href="${img.original}">
                 <img
                     class= "gallery-image"
                     src= "${img.preview}"
@@ -81,9 +81,9 @@ const newImg = images.map(img => `<li class="gallery-item">
 
 boxesGallery.innerHTML = newImg;
 
-boxesGallery.addEventListener("click", parentLisener);
+boxesGallery.addEventListener("click", parentListener);
 
-function parentLisener(event) {
+function parentListener(event) {
     event.preventDefault();
 
     if (event.target.tagName !== 'IMG') {
