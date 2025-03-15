@@ -86,7 +86,7 @@ boxesGallery.addEventListener("click", parentListener);
 function parentListener(event) {
     event.preventDefault();
 
-    if (event.target.tagName !== 'IMG') {
+    if (event.target.nodeName !== 'IMG') {
         return;
     }
 
